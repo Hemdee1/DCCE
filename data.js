@@ -119,7 +119,7 @@ export const footerLinks = [
     links: [
       {
         title: "Faculty of Engineering",
-        link: "#",
+        link: "/engineering",
       },
     ],
   },
@@ -128,15 +128,15 @@ export const footerLinks = [
     links: [
       {
         title: "academic",
-        link: "#",
+        link: "/staff#academic",
       },
       {
         title: "technical",
-        link: "#",
+        link: "/staff#technical",
       },
       {
         title: "non-academic",
-        link: "#",
+        link: "/staff#non-academic",
       },
     ],
   },
@@ -145,19 +145,19 @@ export const footerLinks = [
     links: [
       {
         title: "entry requirements",
-        link: "#",
+        link: "/admissions",
       },
       {
         title: "degree nomenclature",
-        link: "#",
+        link: "/admissions",
       },
       {
         title: "grading system",
-        link: "#",
+        link: "/admissions",
       },
       {
         title: "exam guidelines",
-        link: "#",
+        link: "/guidelines",
       },
     ],
   },
@@ -166,24 +166,56 @@ export const footerLinks = [
     links: [
       {
         title: "100L",
-        link: "#",
+        link: "/course-content",
       },
       {
         title: "200L",
-        link: "#",
+        link: "/course-content",
       },
       {
         title: "300L",
-        link: "#",
+        link: "/course-content",
       },
       {
         title: "400L",
-        link: "#",
+        link: "/course-content",
       },
       {
         title: "500L",
-        link: "#",
+        link: "/course-content",
       },
     ],
+  },
+];
+
+export const tableColumns = [
+  {
+    title: "Course Code",
+    dataIndex: "cd",
+    key: "cd",
+    width: 200,
+    className: "py-3 px-2 border border border-primary-stroke",
+  },
+  {
+    title: "Course Title",
+    dataIndex: "ct",
+    key: "ct",
+    width: 600,
+    className: "py-3 px-2 border border border-primary-stroke",
+  },
+
+  {
+    title: "Credit Units",
+    dataIndex: "cu",
+    key: "cu",
+    width: 200,
+    className: "py-3 px-2 border border border-primary-stroke",
+  },
+  {
+    title: "Pre - Requisite",
+    dataIndex: "pr",
+    key: "pr",
+    width: 200,
+    className: "py-3 px-2 border border border-primary-stroke",
   },
 ];

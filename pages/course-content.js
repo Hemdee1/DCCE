@@ -1,10 +1,11 @@
 import Image from "next/image";
 import HeaderLayout from "../components/HeaderLayout";
-import { useEffect, useRef, useState } from "react";
-import Entry from "../components/Admissions/Entry";
-import Duration from "../components/Admissions/Duration";
-import Degree from "../components/Admissions/Degree";
-import Grading from "../components/Admissions/Grading";
+import { useEffect, useState } from "react";
+import FirstYear from "../components/CourseContents/FirstYear/firstYear";
+import SecondYear from "../components/CourseContents/SecondYear/secondYear";
+import ThirdYear from "../components/CourseContents/ThirdYear/thirdYear";
+import FourthYear from "../components/CourseContents/FourthYear/fourthYear";
+import FifthYear from "../components/CourseContents/FifthYear/fifthYear";
 
 const links = ["100L", "200L", "300L", "400L", "500L"];
 
@@ -38,8 +39,10 @@ const CourseContent = () => {
         </div>
 
         <div
-          className={`mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] padding sticky top-[79px] overflow-clip transition-all duration-300 ${
-            sticky ? "bg-white border-b" : "bg-transparent border-none"
+          className={`mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] padding sticky top-[78px] overflow-clip transition-all duration-300 ${
+            sticky
+              ? "bg-white border-y shadow-md"
+              : "bg-transparent border-none"
           }`}
         >
           <div
@@ -70,7 +73,19 @@ const CourseContent = () => {
           </div>
         </div>
 
-        <div>{/* <Fir */}</div>
+        <div>
+          {sectionSelected === "100L" ? (
+            <FirstYear />
+          ) : sectionSelected === "200L" ? (
+            <SecondYear />
+          ) : sectionSelected === "300L" ? (
+            <ThirdYear />
+          ) : sectionSelected === "400L" ? (
+            <FourthYear />
+          ) : (
+            <FifthYear />
+          )}
+        </div>
       </main>
     </HeaderLayout>
   );

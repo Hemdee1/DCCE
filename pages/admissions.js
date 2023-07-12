@@ -44,7 +44,7 @@ const Admissions = () => {
 
         <div
           className={`mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] padding sticky top-[77px] overflow-clip transition-all duration-300 ${
-            sticky ? "bg-white border-b" : "bg-transparent border-none"
+            sticky ? "bg-white border-y" : "bg-transparent border-none"
           }`}
         >
           <div

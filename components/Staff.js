@@ -6,7 +6,7 @@ const Staff = ({ staff }) => {
 
   return (
     <Link href="/staff/1">
-      <article className="bg-white border rounded-2xl overflow-clip border-primary-stroke w-fit">
+      <article className="transition-all duration-500 bg-white border rounded-2xl overflow-clip border-primary-stroke w-fit hover:scale-105 hover:shadow-md">
         <Image src={img} alt="staff image" width={380} height={300} />
         <div className="px-5 py-[10px] space-y-[10px]">
           <h3 className="text-lg font-bold text-semantic">{name}</h3>

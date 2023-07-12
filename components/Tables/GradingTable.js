@@ -120,21 +120,3 @@ const GradingTable = () => {
 };
 
 export default GradingTable;
-
-// const tableHeader = [
-//   "Source (%)",
-//   "Description",
-//   "Letter Grade",
-//   "Grade Point (GP)",
-//   "Grade Point Average (GPA)",
-//   "Cumulative Grade Point Average (CGPA)",
-//   "Class of Degree",
-// ];
-
-// const GradingTable = () => {
-//   return <table>
-
-//   </table>;
-// };
-
-// export default GradingTable;

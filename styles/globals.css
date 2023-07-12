@@ -8,6 +8,11 @@
   @apply px-5 xl:px-0;
 }
 
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   background-color: #f8fbff;
   font-family: "Poppins", sans-serif;
@@ -15,5 +20,5 @@ body {
 }
 
 p {
-  line-height: 30px !important;
+  line-height: 38px !important;
 }

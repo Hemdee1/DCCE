@@ -14,7 +14,7 @@ const Guidelines = () => {
       </div>
 
       <article className="mt-[100px] max-w-full mx-auto w-inner-width padding">
-        <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke text-sm leading-[30px]">
+        <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke text-sm leading-[38px]">
           <h3 className="uppercase font-bold text-base mb-[30px] text-center">
             examinations guidelines
           </h3>

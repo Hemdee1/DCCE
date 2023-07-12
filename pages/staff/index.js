@@ -6,7 +6,10 @@ export default function Staffs() {
   return (
     <HeaderLayout>
       <main className="max-w-full pt-20 mx-auto w-inner-width padding">
-        <h1 className="text-2xl font-bold text-center text-black uppercase">
+        <h1
+          className="text-2xl font-bold text-center text-black uppercase"
+          id="academic"
+        >
           Academic Staff
         </h1>
         <div className="mt-20 w-full flex flex-wrap justify-center gap-y-[50px] gap-x-[30px]">
@@ -15,7 +18,10 @@ export default function Staffs() {
           ))}
         </div>
 
-        <h1 className="mt-20 text-2xl font-bold text-center text-black uppercase">
+        <h1
+          className="mt-20 text-2xl font-bold text-center text-black uppercase"
+          id="technical"
+        >
           Technical Staff
         </h1>
         <div className="mt-20 w-full flex flex-wrap justify-center gap-y-[50px] gap-x-[30px]">
@@ -24,7 +30,10 @@ export default function Staffs() {
           ))}
         </div>
 
-        <h1 className="mt-20 text-2xl font-bold text-center text-black uppercase">
+        <h1
+          className="mt-20 text-2xl font-bold text-center text-black uppercase"
+          id="non-academic"
+        >
           Non Academic Staff
         </h1>
         <div className="mt-20 w-full flex flex-wrap justify-center gap-y-[50px] gap-x-[30px]">
