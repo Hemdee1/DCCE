@@ -115,6 +115,7 @@ const GradingTable = () => {
       columns={columns}
       data={data}
       className="text-sm text-center border border-primary-stroke"
+      rowKey={(record) => record.lg}
     />
   );
 };

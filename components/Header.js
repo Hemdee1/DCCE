@@ -19,10 +19,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-primary-stroke">
-      <div className="py-2 tracking-widest text-xs text-center text-white capitalize bg-[#222]">
+      <div className="py-2 tracking-widest text-[11px] sm:text-xs text-center text-white capitalize bg-[#222]">
         Abubakar tafawa balewa university, Bauchi
       </div>
-      <div className="flex bg-white justify-center items-center gap-[50px] text-sm font-semibold uppercase">
+      <div className="flex flex-wrap px-10 sm:px-0 bg-white justify-center items-center gap-y-2 gap-x-8 sm:gap-x-[50px] text-sm font-semibold uppercase min-h-[46px]">
         {HeaderLinks.map((data) => {
           const { id, title, link } = data;
 
@@ -30,7 +30,7 @@ const Header = () => {
             <Link
               href={link}
               key={id}
-              className={`py-3 border-semantic ${
+              className={`py-1 sm:py-3 border-semantic ${
                 url === link
                   ? "border-b-2 text-semantic"
                   : "border-none text-[#222]"

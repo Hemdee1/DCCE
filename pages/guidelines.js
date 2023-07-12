@@ -4,7 +4,7 @@ import HeaderLayout from "../components/HeaderLayout";
 const Guidelines = () => {
   return (
     <HeaderLayout>
-      <div className="w-full h-[550px] 2xl:h-[690px] relative">
+      <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative">
         <Image
           src="/images/hero1.png"
           alt="hero image"
@@ -13,13 +13,13 @@ const Guidelines = () => {
         />
       </div>
 
-      <article className="mt-[100px] max-w-full mx-auto w-inner-width padding">
-        <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke text-sm leading-[38px]">
+      <article className="mt-12 sm:mt-[100px] max-w-full mx-auto w-inner-width padding">
+        <div className="sm:bg-white w-full sm:p-[30px] sm:rounded-2xl sm:border border-primary-stroke text-sm sm:text-base">
           <h3 className="uppercase font-bold text-base mb-[30px] text-center">
             examinations guidelines
           </h3>
 
-          <ul className="pl-5 list-decimal">
+          <ul className="pl-2 sm:pl-5 leading-[38px] list-decimal">
             <li>
               A student shall be at the examination room at least ten (10)
               minutes before the advertised time of the examination. A student
@@ -117,7 +117,7 @@ const Guidelines = () => {
             are committed as approved by SENATE are given below.
           </strong>
 
-          <ul className="pl-5 list-disc">
+          <ul className="pl-2 sm:pl-5 leading-[38px] list-disc">
             <li>
               <strong>Offence: </strong>
               Causing commotion, rudeness, disobedience of instruction from

@@ -1,12 +1,12 @@
-import GradingTable from "../Tables/GradingTable";
+import GradingTable from "./GradingTable";
 
 const Grading = () => {
   return (
-    <article className="mt-[100px] max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke">
+    <article className="mt-12 sm:mt-[100px] max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[30px] rounded-2xl border border-primary-stroke">
         <h3 className="uppercase font-bold mb-[30px]">grading system</h3>
 
-        <p className="text-sm">
+        <p className="text-sm sm:text-base">
           The approved grading scheme under the minimum academic standard is
           applicable in grading undergraduate degree course in the department of
           Computer and Communications Engineering. The grading system used in

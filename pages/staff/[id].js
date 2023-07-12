@@ -4,18 +4,20 @@ import HeaderLayout from "../../components/HeaderLayout";
 const StaffProfile = () => {
   return (
     <HeaderLayout>
-      <div className="flex justify-center max-w-full gap-5 pt-20 mx-auto w-inner-width padding">
-        <div className="relative w-[300px] h-[300px]">
+      <div className="flex flex-col justify-center max-w-full gap-10 pt-20 mx-auto lg:gap-5 lg:flex-row w-inner-width padding">
+        <div className="relative w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] mx-auto">
           <Image
             src="/images/profile.png"
             alt="staff image"
             priority
             fill
-            className="object-cover"
+            className="object-cover rounded-md shadow-sm shadow-gray-500"
           />
         </div>
-        <div className="w-1/2">
-          <h3 className="mb-5 font-semibold capitalize">Muhammad Umar Ahmad</h3>
+        <div className="w-full text-sm lg:w-1/2 sm:text-base">
+          <h3 className="mb-5 text-xl font-semibold text-center uppercase">
+            Muhammad Umar Ahmad
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar
@@ -26,7 +28,7 @@ const StaffProfile = () => {
             elementum curabitur vitae nunc sed velit dignissim sodales.
           </p>
 
-          <button className="mt-5 font-semibold text-semantic">
+          <button className="mt-5 text-base font-semibold text-semantic">
             Drive/Dropbox link
           </button>
         </div>

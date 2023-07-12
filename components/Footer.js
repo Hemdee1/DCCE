@@ -7,18 +7,16 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-primary-stroke pt-[50px]">
       <div className="w-inner-width mx-auto max-w-full space-y-[50px] padding">
-        <div className="w-full flex justify-between gap-5">
+        <div className="flex flex-col flex-wrap justify-between w-full gap-10 sm:flex-row">
           <div>
-            <h3 className="text-sm font-semibold">Logo</h3>
+            <h3 className="font-semibold">Logo</h3>
           </div>
 
           {footerLinks.map((footer, index) => {
             const { links, title } = footer;
             return (
               <div key={index}>
-                <h3 className="text-sm font-semibold mb-[10px] capitalize">
-                  {title}
-                </h3>
+                <h3 className="font-semibold mb-[10px] capitalize">{title}</h3>
 
                 <div className="space-y-2">
                   {links.map((data, index) => {
@@ -28,7 +26,7 @@ const Footer = () => {
                       <Link
                         href={link}
                         key={index}
-                        className="text-xs block capitalize"
+                        className="block text-sm capitalize"
                       >
                         {title}
                       </Link>
@@ -40,9 +38,11 @@ const Footer = () => {
           })}
         </div>
 
-        <div className="flex justify-between py-5 border-t border-primary-stroke px-5 2xl:px-0">
-          <button className="text-xs text-semantic">Get The App Here</button>
-          <h5 className="capitalize text-xs">
+        <div className="flex flex-col justify-between gap-2 px-5 py-5 text-center border-t sm:flex-row border-primary-stroke 2xl:px-0">
+          <button className="text-sm font-bold text-semantic">
+            Get The App Here
+          </button>
+          <h5 className="text-sm capitalize">
             all rights reserved © {date.getFullYear()}
           </h5>
         </div>

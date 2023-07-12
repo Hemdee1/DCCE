@@ -1,10 +1,10 @@
 const Duration = () => {
   return (
-    <article className="mt-[100px] max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke">
+    <article className="mt-12 sm:mt-[100px] max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[30px] rounded-2xl border border-primary-stroke">
         <h3 className="uppercase font-bold mb-[30px]">duration of course</h3>
 
-        <p className="text-sm">
+        <p className="text-sm sm:text-base">
           The Bachelor of Engineering (B. Eng.) course in Computer and
           Communications Engineering normally last for five (5) academic years
           (100 to 500 Levels). However, direct entry candidates spend four (4)

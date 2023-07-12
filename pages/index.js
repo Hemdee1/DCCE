@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <HeaderLayout>
       <main>
-        <div className="w-full h-[550px] 2xl:h-[690px] relative">
+        <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative">
           <Image
             src="/images/hero2.png"
             alt="hero image"
@@ -16,14 +16,14 @@ export default function Home() {
         </div>
 
         <div className="max-w-full mx-auto w-inner-width padding">
-          <h2 className="mt-[100px] text-[32px] uppercase font-bold text-black">
+          <h2 className="mt-10 sm:mt-[100px] text-xl sm:text-[32px] uppercase font-bold text-black">
             DEPARTMENT OF COMPUTER AND COMMUNICATIONS ENGINEERING
           </h2>
 
-          <h3 className="uppercase text-black text-2xl font-bold mt-[100px] mb-[50px]">
+          <h3 className="uppercase text-black text-lg sm:text-2xl font-bold mt-10 sm:mt-[100px] mb-4 sm:mb-[50px]">
             history of the department
           </h3>
-          <p>
+          <p className="text-sm text-justify sm:text-base">
             The Department of Computer and Communications Engineering was
             approved in 2011 to offer courses in Computer and Communications
             Engineering in the Abubakar Tafawa Balewa University, Bauchi.  The
@@ -50,10 +50,10 @@ export default function Home() {
             to Computer and Communications Engineering.
           </p>
 
-          <h3 className="uppercase text-black text-2xl font-bold mt-[100px] mb-[50px]">
+          <h3 className="uppercase text-black text-lg sm:text-2xl font-bold mt-10 sm:mt-[100px] mb-4 sm:mb-[50px]">
             philosophy and objectives
           </h3>
-          <p>
+          <p className="text-sm text-justify sm:text-base">
             The philosophy of the Department of Computer and Communications
             Engineering is in conformity with the overall philosophy of the
             university in that being basically a university of technology the

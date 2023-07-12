@@ -1,10 +1,10 @@
 const Entry = () => {
   return (
-    <article className="mt-[100px] max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[30px] rounded-2xl border border-primary-stroke">
+    <article className="mt-12 sm:mt-[100px] max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[30px] rounded-2xl border border-primary-stroke">
         <h3 className="uppercase font-bold mb-[30px]">Entry Requirements</h3>
 
-        <p className="text-sm">
+        <p className="text-sm sm:text-base">
           There are three admission procedures into the department as follows:
           <br /> <br />
           1. Unified Tertiary Matriculation Examination (UTME) <br />
