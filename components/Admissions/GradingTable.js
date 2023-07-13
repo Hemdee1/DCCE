@@ -6,49 +6,49 @@ const columns = [
     dataIndex: "source",
     key: "source",
     width: 200,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
   {
     title: "Description (II)",
     dataIndex: "description",
     key: "age",
     width: 200,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
   {
     title: "Letter Grade (III)",
     dataIndex: "lg",
     key: "lg",
     width: 200,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
   {
     title: "Grade Point (GP) (IV)",
     dataIndex: "gp",
     key: "gp",
     width: 200,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
   {
     title: "Grade Point Average (GPA) (V)",
     dataIndex: "gpa",
     key: "gpa",
     width: 210,
-    className: "py-3 px-5",
+    className: "py-3 px-5 border border border-primary-stroke",
   },
   {
     title: "Cumulative Grade Point Average (CGPA) (VI)",
     dataIndex: "cgpa",
     key: "cgpa",
     width: 250,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
   {
     title: "Class of Degree (VII)",
     dataIndex: "cod",
     key: "cod",
     width: 200,
-    className: "py-3 px-2 border border-t border-primary-stroke",
+    className: "py-3 px-2 border border border-primary-stroke",
   },
 ];
 
@@ -115,7 +115,7 @@ const GradingTable = () => {
       <Table
         columns={columns}
         data={data}
-        className="text-[13px] sm:text-sm text-center border border-primary-stroke w-full"
+        className="text-[13px] sm:text-sm text-center"
         rowKey={(record) => record.lg}
       />
     </div>
