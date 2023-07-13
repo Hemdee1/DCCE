@@ -184,45 +184,53 @@ const secondElective = [
 
 const FirstSemesterTable = () => {
   return (
-    <Table
-      columns={tableColumns}
-      data={firstData}
-      className="mx-auto text-sm text-center uppercase"
-      rowKey={(record) => record.cd}
-    />
+    <div className="overflow-x-scroll sm:overflow-x-auto pb-5">
+      <Table
+        columns={tableColumns}
+        data={firstData}
+        className="text-[13px] sm:text-sm text-center uppercase mt-5"
+        rowKey={(record) => record.cd}
+      />{" "}
+    </div>
   );
 };
 
 const SecondSemesterTable = () => {
   return (
-    <Table
-      columns={tableColumns}
-      data={secondData}
-      className="mx-auto text-sm text-center uppercase"
-      rowKey={(record) => record.cd}
-    />
+    <div className="overflow-x-scroll sm:overflow-x-auto pb-5">
+      <Table
+        columns={tableColumns}
+        data={secondData}
+        className="text-[13px] sm:text-sm text-center uppercase mt-5"
+        rowKey={(record) => record.cd}
+      />{" "}
+    </div>
   );
 };
 
 const FirstElectiveTable = () => {
   return (
-    <Table
-      columns={tableColumns}
-      data={firstElective}
-      className="mx-auto mt-2 text-sm text-center uppercase"
-      rowKey={(record) => record.cd}
-    />
+    <div className="overflow-x-scroll sm:overflow-x-auto pb-5">
+      <Table
+        columns={tableColumns}
+        data={firstElective}
+        className="mx-auto mt-2 text-sm text-center uppercase"
+        rowKey={(record) => record.cd}
+      />{" "}
+    </div>
   );
 };
 
 const SecondElectiveTable = () => {
   return (
-    <Table
-      columns={tableColumns}
-      data={firstElective}
-      className="mx-auto mt-2 text-sm text-center uppercase"
-      rowKey={(record) => record.cd}
-    />
+    <div className="overflow-x-scroll sm:overflow-x-auto pb-5">
+      <Table
+        columns={tableColumns}
+        data={firstElective}
+        className="mx-auto mt-2 text-sm text-center uppercase"
+        rowKey={(record) => record.cd}
+      />{" "}
+    </div>
   );
 };
 

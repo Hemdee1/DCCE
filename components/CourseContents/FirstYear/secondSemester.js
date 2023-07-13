@@ -2,11 +2,11 @@ import { SecondSemesterTable } from "./Table";
 
 const SecondSemester = () => {
   return (
-    <article className="max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[50px] rounded-2xl border border-primary-stroke">
+    <article className="max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[50px] rounded-2xl border border-primary-stroke">
         <SecondSemesterTable />
 
-        <p className="text-sm mt-[100px]">
+        <p className="text-sm sm:text-base mt-12 sm:mt-[100px]">
           <strong>MTH 121:    ELEMENTARY ALGEBRA II (4 UNITS)</strong> <br />
           Plane analytical geometry: Rectangular coordinates, polar coordinates;
           2 dimensional vectors; addition and scalar multiplication. Curves:

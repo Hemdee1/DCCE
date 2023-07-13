@@ -48,7 +48,7 @@ const Admissions = () => {
           }`}
         >
           <div
-            className={`bg-white mx-auto max-w-full flex border-primary-stroke gap-3 flex-wrap sm:flex-nowrap sm:gap-10 w-inner-width justify-between px-5 sm:px-[50px] overflow-clip transition-all duration-300 ${
+            className={`bg-white mx-auto max-w-full flex border-primary-stroke gap-1 flex-wrap sm:flex-nowrap sm:gap-10 w-inner-width justify-between px-5 sm:px-[50px] overflow-clip transition-all duration-300 ${
               sticky
                 ? "w-full rounded-none border-none"
                 : "w-inner-width sm:rounded-full sm:border"

@@ -22,7 +22,7 @@ const Header = () => {
       <div className="py-2 tracking-widest text-[11px] sm:text-xs text-center text-white capitalize bg-[#222]">
         Abubakar tafawa balewa university, Bauchi
       </div>
-      <div className="flex flex-wrap px-10 sm:px-0 bg-white justify-center items-center gap-y-2 gap-x-8 sm:gap-x-[50px] text-sm font-semibold uppercase min-h-[46px]">
+      <div className="flex flex-wrap px-10 sm:px-0 bg-white justify-center items-center gap-y-2 gap-x-8 sm:gap-x-[50px] text-sm font-bold uppercase min-h-[46px]">
         {HeaderLinks.map((data) => {
           const { id, title, link } = data;
 

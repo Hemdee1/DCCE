@@ -194,14 +194,14 @@ export const tableColumns = [
     dataIndex: "cd",
     key: "cd",
     width: 200,
-    className: "py-3 px-2 border border border-primary-stroke",
+    className: "py-3 px-2 border-2 border-primary-stroke",
   },
   {
     title: "Course Title",
     dataIndex: "ct",
     key: "ct",
     width: 600,
-    className: "py-3 px-2 border border border-primary-stroke",
+    className: "py-3 px-2 border-2 border-primary-stroke",
   },
 
   {
@@ -209,13 +209,13 @@ export const tableColumns = [
     dataIndex: "cu",
     key: "cu",
     width: 200,
-    className: "py-3 px-2 border border border-primary-stroke",
+    className: "py-3 px-2 border-2 border-primary-stroke",
   },
   {
     title: "Pre - Requisite",
     dataIndex: "pr",
     key: "pr",
     width: 200,
-    className: "py-3 px-2 border border border-primary-stroke",
+    className: "py-3 px-2 border-2 border-primary-stroke",
   },
 ];

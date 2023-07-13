@@ -2,8 +2,8 @@ import { FirstElectiveTable, FirstSemesterTable } from "./communicationTable";
 
 const CommunicationFirstSemester = () => {
   return (
-    <article className="max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[50px] rounded-2xl border border-primary-stroke">
+    <article className="max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[50px] rounded-2xl border border-primary-stroke">
         <FirstSemesterTable />
 
         <h3 className="font-bold text-center uppercase mt-[30px]">
@@ -11,7 +11,7 @@ const CommunicationFirstSemester = () => {
         </h3>
         <FirstElectiveTable />
 
-        <p className="text-sm mt-[100px]">
+        <p className="text-sm sm:text-base mt-12 sm:mt-[100px]">
           <strong>CCE510: PROJECT AND SEMINAR II (4 UNITS)</strong> <br />
           This course lasts for one academic session.  Each student or group of
           students must undertake a project under the supervision of a lecturer,

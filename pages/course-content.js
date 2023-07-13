@@ -45,15 +45,13 @@ const CourseContent = () => {
         >
           <div
             className={`bg-white mx-auto max-w-full flex border-primary-stroke gap-3 flex-wrap sm:flex-nowrap sm:gap-10 w-[600px] justify-between px-5 sm:px-[50px] overflow-clip transition-all duration-300 ${
-              sticky
-                ? "w-full rounded-none border-none"
-                : "w-inner-width sm:rounded-full sm:border"
+              sticky ? "rounded-none border-none" : "sm:rounded-full sm:border"
             }`}
           >
             {links.map((link, index) => (
               <button
                 key={index}
-                className={`py-3 font-bold text-sm uppercase border-semantic ${
+                className={`py-2 sm:py-3 font-semibold text-sm uppercase border-semantic ${
                   sectionSelected === link
                     ? "border-b-2 text-semantic"
                     : "text-[#222] border-none"

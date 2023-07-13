@@ -1,7 +1,7 @@
 const SecondSemester = () => {
   return (
-    <article className="max-w-full mx-auto w-inner-width padding">
-      <div className="bg-white w-full p-[50px] rounded-2xl border border-primary-stroke">
+    <article className="max-w-full mx-auto w-inner-width px-2 sm:px-5">
+      <div className="bg-white w-full p-3 sm:p-[50px] rounded-2xl border border-primary-stroke">
         <p className="text-sm">
           <strong>EIT430:  INDUSTRIAL TRAINING (IT) 4 CREDITS UNITS</strong>
           <br />
