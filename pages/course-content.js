@@ -7,6 +7,7 @@ import ThirdYear from "../components/CourseContents/ThirdYear/thirdYear";
 import FourthYear from "../components/CourseContents/FourthYear/fourthYear";
 import FifthYear from "../components/CourseContents/FifthYear/fifthYear";
 import { useRouter } from "next/router";
+import { AnimatePresence, motion } from "framer-motion";
 
 const links = ["100L", "200L", "300L", "400L", "500L"];
 
@@ -36,6 +37,41 @@ const CourseContent = () => {
     setSectionSelected(section);
   }, [router]);
 
+  const [swipeValue, setSwipeValue] = useState(200);
+
+  const fadeIn = {
+    initial: {
+      x: swipeValue,
+      opacity: 0,
+    },
+    exit: {
+      x: swipeValue,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+    },
+    transition: {
+      type: "spring",
+      duration: 0.7,
+    },
+  };
+
+  const handleClick = (link, index) => {
+    window.scrollTo({
+      top: window.innerWidth > 640 ? 655 : 430,
+      left: 0,
+      behavior: "smooth",
+    });
+
+    const prevSectionIndex = links.indexOf(sectionSelected);
+
+    setSwipeValue(prevSectionIndex < index ? 200 : -200);
+
+    setSectionSelected(link);
+  };
+
   return (
     <HeaderLayout>
       <main>
@@ -49,7 +85,7 @@ const CourseContent = () => {
         </div>
 
         <div
-          className={`mt-12 sm:mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] sm:px-5 sticky top-[98px] sm:top-[77px] overflow-clip transition-all duration-300 ${
+          className={`mt-12 sm:mt-[100px] z-20 max-w-full mx-auto w-full border-primary-stroke mb-[50px] sm:px-5 sticky top-[98px] sm:top-[77px] overflow-clip transition-all duration-300 ${
             sticky ? "bg-white border-y" : "bg-transparent border-none"
           }`}
         >
@@ -61,19 +97,12 @@ const CourseContent = () => {
             {links.map((link, index) => (
               <button
                 key={index}
-                className={`py-2 sm:py-3 font-semibold text-sm uppercase border-semantic ${
+                className={`py-2 sm:py-3 font-semibold text-sm uppercase border-semantic transition-all duration-300 ${
                   sectionSelected === link
                     ? "border-b-2 text-semantic"
                     : "text-[#222] border-none"
                 }`}
-                onClick={() => {
-                  window.scrollTo({
-                    top: window.innerWidth > 640 ? 655 : 430,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                  setSectionSelected(link);
-                }}
+                onClick={() => handleClick(link, index)}
               >
                 {link}
               </button>
@@ -81,19 +110,31 @@ const CourseContent = () => {
           </div>
         </div>
 
-        <div>
-          {sectionSelected === "100L" ? (
-            <FirstYear />
-          ) : sectionSelected === "200L" ? (
-            <SecondYear />
-          ) : sectionSelected === "300L" ? (
-            <ThirdYear />
-          ) : sectionSelected === "400L" ? (
-            <FourthYear />
-          ) : (
-            <FifthYear />
-          )}
-        </div>
+        <AnimatePresence key={sectionSelected} mode="wait">
+          <div className="overflow-hidden">
+            {sectionSelected === "100L" ? (
+              <motion.div {...fadeIn}>
+                <FirstYear />
+              </motion.div>
+            ) : sectionSelected === "200L" ? (
+              <motion.div {...fadeIn}>
+                <SecondYear />
+              </motion.div>
+            ) : sectionSelected === "300L" ? (
+              <motion.div {...fadeIn}>
+                <ThirdYear />
+              </motion.div>
+            ) : sectionSelected === "400L" ? (
+              <motion.div {...fadeIn}>
+                <FourthYear />
+              </motion.div>
+            ) : (
+              <motion.div {...fadeIn}>
+                <FifthYear />
+              </motion.div>
+            )}
+          </div>
+        </AnimatePresence>
       </main>
     </HeaderLayout>
   );

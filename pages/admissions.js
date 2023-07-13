@@ -6,6 +6,7 @@ import Duration from "../components/Admissions/Duration";
 import Degree from "../components/Admissions/Degree";
 import Grading from "../components/Admissions/Grading";
 import { useRouter } from "next/router";
+import { AnimatePresence, motion } from "framer-motion";
 
 const links = [
   "entry requirements",
@@ -40,6 +41,38 @@ const Admissions = () => {
     setSectionSelected(section);
   }, [router]);
 
+  const [swipeValue, setSwipeValue] = useState(200);
+
+  const fadeIn = {
+    initial: {
+      x: swipeValue,
+    },
+    exit: {
+      x: swipeValue,
+    },
+    animate: {
+      x: 0,
+    },
+    transition: {
+      type: "spring",
+      duration: 0.7,
+    },
+  };
+
+  const handleClick = (link, index) => {
+    window.scrollTo({
+      top: window.innerWidth > 640 ? 655 : 430,
+      left: 0,
+      behavior: "smooth",
+    });
+
+    const prevSectionIndex = links.indexOf(sectionSelected);
+
+    setSwipeValue(prevSectionIndex < index ? 200 : -200);
+
+    setSectionSelected(link);
+  };
+
   return (
     <HeaderLayout>
       <main>
@@ -72,14 +105,7 @@ const Admissions = () => {
                     ? "border-b-2 text-semantic"
                     : "text-[#222] border-none"
                 }`}
-                onClick={() => {
-                  window.scrollTo({
-                    top: window.innerWidth > 640 ? 655 : 430,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                  setSectionSelected(link);
-                }}
+                onClick={() => handleClick(link, index)}
               >
                 {link}
               </button>
@@ -87,17 +113,27 @@ const Admissions = () => {
           </div>
         </div>
 
-        <div>
-          {sectionSelected === "entry requirements" ? (
-            <Entry />
-          ) : sectionSelected === "duration of course" ? (
-            <Duration />
-          ) : sectionSelected === "degree nomenclature" ? (
-            <Degree />
-          ) : (
-            <Grading />
-          )}
-        </div>
+        <AnimatePresence key={sectionSelected}>
+          <div className="overflow-hidden">
+            {sectionSelected === "entry requirements" ? (
+              <motion.div {...fadeIn}>
+                <Entry />
+              </motion.div>
+            ) : sectionSelected === "duration of course" ? (
+              <motion.div {...fadeIn}>
+                <Duration />
+              </motion.div>
+            ) : sectionSelected === "degree nomenclature" ? (
+              <motion.div {...fadeIn}>
+                <Degree />
+              </motion.div>
+            ) : (
+              <motion.div {...fadeIn}>
+                <Grading />
+              </motion.div>
+            )}
+          </div>
+        </AnimatePresence>
       </main>
     </HeaderLayout>
   );

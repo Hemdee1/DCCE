@@ -119,7 +119,6 @@ export const footerLinks = [
     links: [
       {
         title: "Faculty of Engineering",
-        query: "",
         link: "/engineering",
       },
     ],
@@ -129,17 +128,14 @@ export const footerLinks = [
     links: [
       {
         title: "academic",
-        query: "",
         link: "/staff#academic",
       },
       {
         title: "technical",
-        query: "",
         link: "/staff#technical",
       },
       {
         title: "non-academic",
-        query: "",
         link: "/staff#non-academic",
       },
     ],
@@ -169,7 +165,6 @@ export const footerLinks = [
       },
       {
         title: "exam guidelines",
-        query: "",
         link: "/guidelines",
       },
     ],
@@ -237,3 +232,22 @@ export const tableColumns = [
     className: "py-3 px-2 border-2 border-primary-stroke",
   },
 ];
+
+export const fadeIn = {
+  initial: {
+    opacity: 0,
+    x: 100,
+  },
+  exit: {
+    opacity: 0,
+    x: 100,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+  },
+  transition: {
+    type: "spring",
+    duration: 0.5,
+  },
+};
