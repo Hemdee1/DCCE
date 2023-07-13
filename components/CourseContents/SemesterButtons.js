@@ -3,7 +3,7 @@ const links = ["first semester", "second semester"];
 // SEMESTER BUTTONS FROM 100L TO 400L
 const SemesterButtons = ({ sectionSelected, setSectionSelected }) => {
   return (
-    <div className="mt-[50px] w-full mb-[50px] sm:px-5 left-0 sticky top-[148px] sm:top-[125px] overflow-clip shadow-md sm:shadow-none bg-white sm:bg-transparent shadow-gray-300">
+    <div className="mt-[50px] w-full mb-[50px] sm:px-5 left-0 sticky top-[146px] sm:top-[125px] overflow-clip shadow-md sm:shadow-none bg-white sm:bg-transparent shadow-gray-300">
       <div className="bg-white mx-auto max-w-full flex border-primary-stroke gap-10 w-[350px] justify-between px-10 sm:px-[30px] sm:border sm:rounded-full">
         {links.map((link, index) => (
           <button

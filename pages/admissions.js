@@ -43,7 +43,7 @@ const Admissions = () => {
         </div>
 
         <div
-          className={`mt-12 sm:mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] sm:px-5 sticky top-[100px] sm:top-[77px] overflow-clip transition-all duration-300 ${
+          className={`mt-12 sm:mt-[100px] max-w-full mx-auto w-full border-primary-stroke mb-[50px] sm:px-5 sticky top-[99px] sm:top-[77px] overflow-clip transition-all duration-300 ${
             sticky ? "bg-white border-y" : "bg-transparent border-none"
           }`}
         >

@@ -111,12 +111,14 @@ const data = [
 
 const GradingTable = () => {
   return (
-    <Table
-      columns={columns}
-      data={data}
-      className="text-sm text-center border border-primary-stroke"
-      rowKey={(record) => record.lg}
-    />
+    <div className="overflow-x-scroll sm:overflow-x-auto pb-5">
+      <Table
+        columns={columns}
+        data={data}
+        className="text-[13px] sm:text-sm text-center border border-primary-stroke w-full"
+        rowKey={(record) => record.lg}
+      />
+    </div>
   );
 };
 
