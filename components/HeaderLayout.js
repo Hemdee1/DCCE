@@ -10,7 +10,7 @@ const HeaderLayout = ({ children }) => {
     <>
       <Header />
       <AnimatePresence key={route.pathname}>
-        <motion.div {...fadeIn} className="mt-[79px] pb-24 overflow-hidden">
+        <motion.div {...fadeIn} className="mt-[79px] pb-24">
           {children}
         </motion.div>
       </AnimatePresence>
