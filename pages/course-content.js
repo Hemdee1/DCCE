@@ -6,11 +6,13 @@ import SecondYear from "../components/CourseContents/SecondYear/secondYear";
 import ThirdYear from "../components/CourseContents/ThirdYear/thirdYear";
 import FourthYear from "../components/CourseContents/FourthYear/fourthYear";
 import FifthYear from "../components/CourseContents/FifthYear/fifthYear";
+import { useRouter } from "next/router";
 
 const links = ["100L", "200L", "300L", "400L", "500L"];
 
 const CourseContent = () => {
   const [sticky, setSticky] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const value = window.innerWidth > 640 ? 650 : 425;
@@ -25,6 +27,14 @@ const CourseContent = () => {
   }, []);
 
   const [sectionSelected, setSectionSelected] = useState("100L");
+
+  useEffect(() => {
+    const { section } = router.query;
+
+    if (!section) return;
+
+    setSectionSelected(section);
+  }, [router]);
 
   return (
     <HeaderLayout>

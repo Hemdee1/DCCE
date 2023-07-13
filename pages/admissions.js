@@ -1,10 +1,11 @@
 import Image from "next/image";
 import HeaderLayout from "../components/HeaderLayout";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Entry from "../components/Admissions/Entry";
 import Duration from "../components/Admissions/Duration";
 import Degree from "../components/Admissions/Degree";
 import Grading from "../components/Admissions/Grading";
+import { useRouter } from "next/router";
 
 const links = [
   "entry requirements",
@@ -15,6 +16,7 @@ const links = [
 
 const Admissions = () => {
   const [sticky, setSticky] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const value = window.innerWidth > 640 ? 650 : 425;
@@ -29,6 +31,14 @@ const Admissions = () => {
   }, []);
 
   const [sectionSelected, setSectionSelected] = useState("entry requirements");
+
+  useEffect(() => {
+    const { section } = router.query;
+
+    if (!section) return;
+
+    setSectionSelected(section);
+  }, [router]);
 
   return (
     <HeaderLayout>

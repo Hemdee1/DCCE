@@ -20,7 +20,23 @@ const Footer = () => {
 
                 <div className="space-y-2">
                   {links.map((data, index) => {
-                    const { link, title } = data;
+                    const { link, title, query } = data;
+
+                    if (query) {
+                      return (
+                        <Link
+                          // href={link}
+                          href={{
+                            pathname: link,
+                            query: { section: query },
+                          }}
+                          key={index}
+                          className="block text-sm capitalize"
+                        >
+                          {title}
+                        </Link>
+                      );
+                    }
 
                     return (
                       <Link

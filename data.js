@@ -119,6 +119,7 @@ export const footerLinks = [
     links: [
       {
         title: "Faculty of Engineering",
+        query: "",
         link: "/engineering",
       },
     ],
@@ -128,14 +129,17 @@ export const footerLinks = [
     links: [
       {
         title: "academic",
+        query: "",
         link: "/staff#academic",
       },
       {
         title: "technical",
+        query: "",
         link: "/staff#technical",
       },
       {
         title: "non-academic",
+        query: "",
         link: "/staff#non-academic",
       },
     ],
@@ -145,18 +149,27 @@ export const footerLinks = [
     links: [
       {
         title: "entry requirements",
+        query: "entry requirements",
         link: "/admissions",
       },
       {
         title: "degree nomenclature",
+        query: "degree nomenclature",
         link: "/admissions",
       },
       {
         title: "grading system",
+        query: "grading system",
+        link: "/admissions",
+      },
+      {
+        title: "duration of course",
+        query: "duration of course",
         link: "/admissions",
       },
       {
         title: "exam guidelines",
+        query: "",
         link: "/guidelines",
       },
     ],
@@ -166,22 +179,27 @@ export const footerLinks = [
     links: [
       {
         title: "100L",
+        query: "100L",
         link: "/course-content",
       },
       {
         title: "200L",
+        query: "200L",
         link: "/course-content",
       },
       {
         title: "300L",
+        query: "300L",
         link: "/course-content",
       },
       {
         title: "400L",
+        query: "400L",
         link: "/course-content",
       },
       {
         title: "500L",
+        query: "500L",
         link: "/course-content",
       },
     ],
