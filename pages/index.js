@@ -6,12 +6,13 @@ export default function Home() {
   return (
     <HeaderLayout>
       <main>
-        <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative">
+        <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative bg-black">
           <Image
-            src="/images/hero2.png"
+            src="/images/dept.jpeg"
+            priority
             alt="hero image"
             fill
-            className="object-cover max-w-full"
+            className="object-cover max-w-full opacity-60"
           />
         </div>
 

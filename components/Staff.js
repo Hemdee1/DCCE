@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Staff = ({ staff }) => {
-  const { certification, img, name, title } = staff;
+  const { certification, img, name, title, id } = staff;
 
   return (
-    <Link href="/staff/1">
-      <article className="transition-all duration-500 bg-white border rounded-2xl overflow-clip border-primary-stroke w-[300px] hover:scale-105 hover:shadow-md">
+    <Link href={"/staff/" + id}>
+      <article className="transition-all duration-500 bg-white border rounded-2xl overflow-clip border-primary-stroke w-[320px] hover:scale-105 hover:shadow-md">
         <div className="w-full h-[200px] md:h-[300px] relative">
           <Image
-            src={img}
+            src={img ? img : "/images/staffs/user.jpg"}
             alt="staff image"
             fill
             className="object-cover max-w-full"

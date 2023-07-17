@@ -4,12 +4,12 @@ import HeaderLayout from "../components/HeaderLayout";
 const Guidelines = () => {
   return (
     <HeaderLayout>
-      <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative">
+      <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative bg-black">
         <Image
-          src="/images/hero1.png"
+          src="/images/nlt2.jpeg"
           alt="hero image"
           fill
-          className="object-cover max-w-full"
+          className="object-cover max-w-full opacity-60"
         />
       </div>
 
