@@ -30,10 +30,10 @@ const Header = () => {
             <Link
               href={link}
               key={id}
-              className={`py-1 sm:py-3 border-semantic transition-all duration-300 ${
+              className={`py-1 sm:py-3 border-b-2 transition-all duration-300 ${
                 url === link
-                  ? "border-b-2 text-semantic"
-                  : "border-none text-[#222]"
+                  ? "border-semantic text-semantic"
+                  : "border-white text-[#222]"
               }`}
             >
               {title}
