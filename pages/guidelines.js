@@ -8,6 +8,7 @@ const Guidelines = () => {
         <Image
           src="/images/nlt2.jpeg"
           alt="hero image"
+          priority
           fill
           className="object-cover max-w-full opacity-60"
         />
