@@ -1,21 +1,19 @@
 import HeaderLayout from "../components/HeaderLayout";
 import Image from "next/image";
-import HeroImage from "/public/images/dept.jpeg";
 
 export default function Home() {
   return (
     <HeaderLayout>
       <main>
-        {/* <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative bg-black"> */}
-        <div className="bg-black">
+        <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative bg-black">
           <Image
-            src={HeroImage}
+            src="/images/dept.jpeg"
             alt="hero image"
             priority
-            className="object-cover h-[400px] opacity-60 md:h-[550px] 2xl:h-[690px]"
+            fill
+            className="object-cover max-w-full opacity-60"
           />
         </div>
-        {/* </div> */}
 
         <div className="max-w-full mx-auto w-inner-width padding">
           <h2 className="mt-10 sm:mt-[100px] text-xl sm:text-[32px] uppercase font-bold text-black">

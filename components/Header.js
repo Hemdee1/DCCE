@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { HeaderLinks } from "../data";
 import { useRouter } from "next/router";
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const router = useRouter();
   const [url, setUrl] = useState("");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const { pathname } = router;
 
     if (pathname.includes("staff")) {
