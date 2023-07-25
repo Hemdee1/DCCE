@@ -1,4 +1,3 @@
-import Staff from "../components/Staff";
 import HeaderLayout from "../components/HeaderLayout";
 import Image from "next/image";
 import HeroImage from "/public/images/dept.jpeg";
@@ -8,13 +7,14 @@ export default function Home() {
     <HeaderLayout>
       <main>
         {/* <div className="w-full h-[400px] md:h-[550px] 2xl:h-[690px] relative bg-black"> */}
-        <Image
-          src={HeroImage}
-          alt="hero image"
-          priority
-          placeholder="blur"
-          className="object-cover h-[400px] md:h-[550px] 2xl:h-[690px]"
-        />
+        <div className="bg-black">
+          <Image
+            src={HeroImage}
+            alt="hero image"
+            placeholder="blur"
+            className="object-cover h-[400px] opacity-60 md:h-[550px] 2xl:h-[690px]"
+          />
+        </div>
         {/* </div> */}
 
         <div className="max-w-full mx-auto w-inner-width padding">

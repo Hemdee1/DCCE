@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>ATBU DCCE</title>
         <meta
           name="description"
           content="A student guide that makes learning more accessible to Department of Computer and Communication Engineering Students"

@@ -58,9 +58,9 @@ const Footer = () => {
           <button className="text-sm font-bold text-semantic">
             Get The App Here
           </button>
-          <h5 className="text-sm capitalize">
+          <p className="text-sm capitalize">
             all rights reserved © {date.getFullYear()}
-          </h5>
+          </p>
         </div>
       </div>
     </footer>
