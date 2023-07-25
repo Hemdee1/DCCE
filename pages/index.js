@@ -11,7 +11,7 @@ export default function Home() {
           <Image
             src={HeroImage}
             alt="hero image"
-            placeholder="blur"
+            priority
             className="object-cover h-[400px] opacity-60 md:h-[550px] 2xl:h-[690px]"
           />
         </div>
